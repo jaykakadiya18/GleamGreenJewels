@@ -1,0 +1,942 @@
+<header>
+    <div class="header-top position-relative">
+      <div class="container">
+        <div id="glopal_cs_position" class="glopal-cs-main"></div>
+        <div class="top-link text-center" id="promotion-text" role="region" aria-label="promotion">
+          <p class="d-none top-text-content">
+            <a href="/appointment">
+              <span style="
+                  font-weight: 500;
+                  font-size: 13px;
+                  color: #fff;
+                ">BOOK A VIRTUAL OR IN-PERSON APPOINTMENT</span>
+            </a>
+          </p>
+          <p class="d-none top-text-content">
+            <a href="/ourmission">
+              <span style="
+                  font-weight: 500;
+                  font-size: 13px;
+                  color: #fff;
+                ">EVERY PURCHASE FUNDS YOUR NON PROFIT</span></a>
+          </p>
+          <p class="d-none top-text-content">
+            <a href="/sustainability">
+              <span style="
+                  font-weight: 500;
+                  font-size: 13px;
+                  color: #fff;
+                ">SUSTAINABILITY & ETHICAL</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var containers = document.querySelectorAll(".container");
+        containers.forEach(function (container) {
+          var slides = container.querySelectorAll(".top-text-content");
+          var currentIndex = 0;
+          var slideWidth = slides[0].offsetWidth; // Get the width of one slide
+
+          function showNextSlide() {
+            // Calculate the position for the next slide
+            var newPosition = -(currentIndex * slideWidth);
+            container.scroll({
+              left: newPosition,
+              behavior: "smooth",
+            });
+            currentIndex = (currentIndex + 1) % slides.length;
+          }
+
+          setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+        });
+      });
+    </script>
+
+    <div id="header-sticky-anchor"></div>
+    <div id="header-sticky">
+      <div class="header-bottom position-relative" id="st-menu">
+        <div class="container">
+          <div class="d-flex flex-wrap no-gutters align-items-center position-relative">
+            <div class="mobile-top-left d-lg-none">
+              <ul class="d-flex align-items-center">
+                <li>
+                  <a href="javascript:void(0);" aria-label="Mobile menu" title="Mobile Menu"
+                    class="mobile-menu-bar sb-toggle-left" rel="nofollow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+                </li>
+                <li class="d-none">
+                  <a href="#" aria-label="Contact Us" title="Contact Us"><svg class="sv-email"
+                      aria-hidden="true" role="img" width="25" height="17">
+                      <use href="#sv-email" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sv-email"></use>
+                    </svg></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header-logo text-center" style="display: flex">
+              <a href="/" class aria-label="GleamGreenJewels.com" title="GleamGreenJewels.com">
+                <img src="/static/img/logo/Green-Logo-logo.gif" style="box-sizing: content-box"
+                  alt="Gleam Green Jewels" />
+              </a>
+            </div>
+
+
+            <div class="mobile-hide" style="display: inline-flex; margin-left: 102%; ">
+              <a class="position-relative con_icon" id="con_icon" rel="nofollow"
+                style="font-family: MyCustomFont; cursor: pointer;">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="165.000000pt" height="134.000000pt" viewBox="0 0 165.000000 134.000000" preserveAspectRatio="xMidYMid meet" style="width: 20px; height:20px;">
+                      <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                          <path d="M222 1109 l-183 -190 23 -28 c13 -16 183 -212 378 -435 248 -285 360 -406 372 -404 14 2 611 633 634 670 4 5 -45 61 -107 124 l-114 114 -298 0 c-196 0 -296 -3 -292 -10 4 -6 111 -10 289 -10 282 0 283 0 304 -23 12 -13 22 -28 22 -33 0 -20 -421 -459 -440 -459 -12 0 -119 110 -305 312 -157 172 -285 316 -285 320 0 4 46 54 102 110 l103 103 390 0 390 -1 180 -199 c161 -180 205 -220 205 -191 0 5 -84 102 -187 215 l-187 206 -406 -1 -405 0 -183 -190z m281 -413 c161 -176 297 -321 303 -323 7 -2 112 103 235 234 122 131 230 239 238 241 9 1 43 -24 76 -57 l59 -61 -25 -27 c-155 -169 -550 -591 -563 -602 -15 -13 -21 -11 -51 20 -54 56 -677 773 -682 786 -7 19 79 114 100 111 10 -2 149 -147 310 -322z"/>
+                      </g>
+                  </svg> -->
+                <span class="mobile-hide" style="margin-left: 0px;margin: -114px;">CONTACT US</span>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="165.000000pt" height="134.000000pt"
+                  viewBox="0 0 165.000000 134.000000" preserveAspectRatio="xMidYMid meet"
+                  style="width: 20px; height:20px; margin-left:-100%">
+                  <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="#000000"
+                    stroke="none">
+                    <path
+                      d="M222 1109 l-183 -190 23 -28 c13 -16 183 -212 378 -435 248 -285 360 -406 372 -404 14 2 611 633 634 670 4 5 -45 61 -107 124 l-114 114 -298 0 c-196 0 -296 -3 -292 -10 4 -6 111 -10 289 -10 282 0 283 0 304 -23 12 -13 22 -28 22 -33 0 -20 -421 -459 -440 -459 -12 0 -119 110 -305 312 -157 172 -285 316 -285 320 0 4 46 54 102 110 l103 103 390 0 390 -1 180 -199 c161 -180 205 -220 205 -191 0 5 -84 102 -187 215 l-187 206 -406 -1 -405 0 -183 -190z m281 -413 c161 -176 297 -321 303 -323 7 -2 112 103 235 234 122 131 230 239 238 241 9 1 43 -24 76 -57 l59 -61 -25 -27 c-155 -169 -550 -591 -563 -602 -15 -13 -21 -11 -51 20 -54 56 -677 773 -682 786 -7 19 79 114 100 111 10 -2 149 -147 310 -322z" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+
+            <style>
+              @media screen and (max-width: 768px) {
+                .mobile-hide .con_icon span {
+                  font-size: 12px;
+                  /* Adjust the font size as needed */
+                }
+              }
+            </style>
+
+            <div class="dropdown-contact mobile-hides text-left dd-contact">
+              <ul class="dropdown-contact-list">
+                <li class="glopal-hide">
+                  <a href="/appointment" class="contact-top-link" aria-label="Book an Appointment"
+                    title="Book an Appointment">Book an
+                    Appointment</a>
+                </li>
+                <!-- <li class="glopal-hide">
+                  <a class="contact-top-link" title="Chat">Chat</a>
+                </li> -->
+                <li class="glopal-show">
+                  <a class="contact-top-link" href="tel:+1-737-242-0558">Call us</a>
+                </li>
+                <li>
+                  <a class="contact-top-link" href="mailto:hello@gleamgreen.com" aria-label="Email Us"
+                    title="Email Us">Email us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="navigation" class="position-relative d-none d-lg-block ">
+        <div class="container">
+          <div class="navigation" id="deskNav">
+            <div class="logo_sticky">
+              <a href="/" aria-label="gleamgreen.com" title="gleamgreen.com" class>
+              </a>
+            </div>
+            <ul class="nav-menu">
+              <li class="d-lg-none mobile-search-close">
+                <div class="search-close-main">
+                  <div class="header-search">
+                    <div class="header-search-inner position-relative">
+                      <form action="#" method="get" name="frmSearchMobile" id="frmSearchMobile"></form>
+                    </div>
+                  </div>
+                  <div class="menu-close-icon">
+                    <!-- if (!window.__cfRLUnblockHandlers) return false;  -->
+                    <a href="javascript:void(0);" class="mobile-menu-bar sb-close" id="closeButton" rel="nofollow"
+                      onclick="closeSidebar()"
+                      aria-label="Mobile Menu" title="Mobile Menu" data-cf-modified-016465ea42d52e70208927bb->
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+                <li class="sub-nav">
+                  <a href="#" aria-label="Engagement" title="Engagement" class="nav-sub-hd ga4_top_nav_clk"
+                    style="font-family: MyCustomFont; font-size: 14px">Engagement</a>
+                  <span class="ar-subnav nav-sub-hd d-lg-none">
+                    <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                      <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#sv-right-arrow"></use>
+                    </svg>
+                  </span>
+                  <div class="nav-dropdown full-menu-dropdown engagement-dropdown design-ring-dropdown">
+                    <div class="container">
+                      <div class="row engagement-dropdown-top">
+                        <div class="col-xl-6 col-lg-6 preset-rings-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">
+                            ENGAGEMENT RING
+                          </h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div
+                            class="nav-dropdown-main d-flex justify-content-between flex-lg-nowrap flex-wrap position-relative mb-lg-4 pb-lg-2">
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+                              <h2 class="cust-h2">Shop by Style</h2>
+                              <ul>
+                                <li class="icon">
+                                  <a href="/engagement/all" aria-label="All" title="All"
+                                    class="ga4_top_nav_clk">All</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/solitaire" aria-label="Solitaire" title="Solitaire"
+                                    class="ga4_top_nav_clk">Solitaire</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/hidden_halo" aria-label="Hidden Halo" title="Hidden Halo"
+                                    class="ga4_top_nav_clk">Hidden Halo</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/three_stone" aria-label="Three Stone" title="Three Stone" class="ga4_top_nav_clk">Three
+                                    Stone</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/halo" aria-label="Halo" title="Halo" class="ga4_top_nav_clk">Halo</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/vintage" aria-label="Vintage" title="Vintage"
+                                    class="ga4_top_nav_clk">Vintage</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/side_stone" aria-label="Side Stone" title="Side Stone" class="ga4_top_nav_clk">Side
+                                    Stone</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/bridal_set" aria-label="Bridal Set" title="Bridal Set" class="ga4_top_nav_clk">Bridal Set</a>
+                                </li>
+                             
+                              </ul>
+                            </div>
+                            <div class="nav-dropdown-links nav-dropdown-inner shape-dtl">
+                              <h2 class="cust-h2">Shop by Shape</h2>
+                              <ul class="d-flex flex-wrap align-items-center">
+                                <li class="icon">
+                                  <a href="/engagement/round" aria-label="Round Diamond" title="Round Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/round.svg"
+                                        loading="lazy" width="30" height="30" title="Round Diamond"
+                                        alt="Round Diamond" /></span>Round</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/emerald" aria-label="Emerald Diamond" title="Emerald Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/emerald.svg" loading="lazy" width="30" height="30"
+                                        title="Emerald Diamond" alt="Emerald Diamond" /></span>Emerald</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/princess" aria-label="Princess Diamond" title="Princess Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/princess.svg" loading="lazy" width="30" height="30"
+                                        title="Princess Diamond" alt="Princess Diamond" /></span>Princess</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/pear" aria-label="Pear Diamond" title="Pear Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/pear.svg"
+                                        loading="lazy" width="30" height="30" title="Pear Diamond"
+                                        alt="Pear Diamond" /></span>Pear</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/cushion" aria-label="Cushion Diamond" title="Cushion Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/cushion.svg" loading="lazy" width="30" height="30"
+                                        title="Cushion Diamond" alt="Cushion Diamond" /></span>Cushion</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/oval" aria-label="Oval Diamond" title="Oval Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/oval.svg"
+                                        loading="lazy" width="30" height="30" title="Oval Diamond"
+                                        alt="Oval Diamond" /></span>Oval</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/asscher" aria-label="Asscher Diamond" title="Asscher Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/asscher.svg" loading="lazy" width="30" height="30"
+                                        title="Asscher Diamond" alt="Asscher Diamond" /></span>Asscher</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/radiant" aria-label="Radiant Diamond" title="Radiant Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/radiant.svg" loading="lazy" width="30" height="30"
+                                        title="Radiant Diamond" alt="Radiant Diamond" /></span>Radiant</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/heart" aria-label="Heart Diamond" title="Heart Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/heart.svg"
+                                        loading="lazy" title="Heart Diamond" width="30" height="30"
+                                        alt="Heart Diamond" /></span>Heart</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/engagement/marquise" aria-label="Marquise LDiamond" title="Marquise Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/marquise.svg" loading="lazy" width="30" height="30"
+                                        title="Marquise Diamond" alt="Marquise Diamond" /></span>Marquise</a>
+                                </li>
+                                <li class="icon full-width-shape">
+                                  <a href="/engagement/elongated-cushion" aria-label="Elongated Cushion Diamond" title="Elongated Cushion Diamond"
+                                    class="ga4_top_nav_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/elongated-cushion.svg" loading="lazy" width="30" height="30"
+                                        title="Elongated Cushion Diamond"
+                                        alt="Elongated Cushion Diamond" /></span>Elongated Cushion</a>
+                                </li>
+                              </ul>
+                            </div>
+
+
+
+
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 design-ring-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">
+                            DESIGN YOUR RING
+                          </h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div class="nav-dropdown-main text-center position-relative mb-3 mb-lg-0">
+                            <div class="your-ring-thumb">
+                              <div class="d-none d-lg-block">
+                                <img
+                                  src="/static/img/header/headerbanner.png"
+                                  loading="lazy" class="d-block w-100" title="Design Your Ring" alt="Design Your Ring"
+                                  style="background-size: cover;" />
+                              </div>
+                            </div>
+                            <div class="your-ring-content">
+                              <div
+                                class="your-ring-button d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-left">
+                                <div class="ring-button-inner">
+                                  <a href="/appointment" aria-label="BOOK AN APPOINTMENT"
+                                    title="BOOK AN APPOINTMENT" class="btn btn-secondary d-block ga4_top_nav_clk">BOOK AN APPOINTMENT</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="dmd-jewelry-main text-left mt-4 pt-3 d-none d-lg-block">
+                             
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none mobile-menu-img">
+                      <a href="#" aria-label="Engagement" title="Engagement" class="ga4_top_nav_clk"><img
+                          src="#"
+                          loading="lazy" width="360" height="130" title="Engagement" alt="Engagement" /></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="sub-nav">
+                  <a href="#" aria-label="Wedding" title="Wedding" class="nav-sub-hd ga4_top_nav_clk"
+                    data-uw-rm-brl="PR" data-uw-original-href="#"
+                    style="font-family: MyCustomFont; font-size: 14px">Wedding</a>
+                  <span class="ar-subnav nav-sub-hd d-lg-none">
+                    <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                      <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#sv-right-arrow"></use>
+                    </svg>
+                  </span>
+                  <div class="nav-dropdown full-menu-dropdown engagement-dropdown design-ring-dropdown">
+                    <div class="container">
+                      <div class="row engagement-dropdown-top">
+                        <div class="col-xl-6 col-lg-6 preset-rings-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">Wedding BAND</h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div
+                            class="nav-dropdown-main d-flex justify-content-between flex-lg-nowrap flex-wrap position-relative mb-lg-4 pb-lg-2">
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+                              <!-- <div class="d-lg-none mb-3">
+                                <a href="#" class="prime-link pl-0 pr-0 ga4_top_nav_clk" aria-label="Shop by Style"
+                                  title="Shop by Style"><span>View all </span></a>
+                              </div> -->
+                              <!-- <h2 class="cust-h2">WOMEN</h2> -->
+                              <ul>
+                                <li class="icon">
+                                  <a href="/wedding/all" aria-label="All" title="All"
+                                    class="ga4_top_nav_clk">All</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/wedding/women_wedding_bands" aria-label="Wedding Bands" title="Wedding Bands"
+                                    class="ga4_top_nav_clk">Women Wedding Bands</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/wedding/women_eternity_bands" aria-label="Eternity Bands " title="Eternity Bands "
+                                    class="ga4_top_nav_clk">Women Eternity Bands
+                                  </a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/wedding/men_wedding_bands" aria-label="Men Wedding Bands" title="Men Wedding Bands"
+                                    class="ga4_top_nav_clk">Men Wedding Bands</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+
+                              <!-- <h2 class="cust-h2">MEN</h2>
+                              <ul>
+                                <li class="icon">
+                                  <a href="#" aria-label="Wedding Bands" title="Wedding Bands"
+                                    class="ga4_top_nav_clk">Wedding Bands</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="#" aria-label="Anniversary Bands" title="Anniversary Bands"
+                                    class="ga4_top_nav_clk">Anniversary Bands</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="#" aria-label="Eternity Bands " title="Eternity Bands "
+                                    class="ga4_top_nav_clk">Eternity Bands
+                                  </a>
+                                </li>
+                              </ul> -->
+
+                            </div>
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+
+                              <h2 class="cust-h2">
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 design-ring-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">
+                            DESIGN YOUR RING
+                          </h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div class="nav-dropdown-main text-center position-relative mb-3 mb-lg-0">
+                            <div class="your-ring-thumb">
+                              <div class="d-none d-lg-block">
+                                <img
+                                  src="/static/img/header/headerbanner.png"
+                                  loading="lazy" class="d-block w-100" title="Design Your Ring" alt="Design Your Ring"
+                                  style="background-size: cover;" />
+                              </div>
+                            </div>
+                            <div class="your-ring-content">
+                              <div
+                                class="your-ring-button d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-left">
+                                <div class="ring-button-inner">
+                                  <a href="/appointment" aria-label="BOOK AN APPOINTMENT"
+                                    title="BOOK AN APPOINTMENT" class="btn btn-secondary d-block ga4_top_nav_clk">BOOK
+                                    AN APPOINTMENT</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none mobile-menu-img">
+                      <a href="#" aria-label="Engagement" title="Engagement" class="ga4_top_nav_clk"><img
+                          src="#"
+                          loading="lazy" width="360" height="130" title="Engagement" alt="Engagement" /></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="sub-nav">
+                  <a href="#" aria-label="Wedding" title="Wedding" class="nav-sub-hd ga4_top_nav_clk"
+                    data-uw-rm-brl="PR" data-uw-original-href="#"
+                    style="font-family: MyCustomFont; font-size: 14px">Jewelry</a>
+                  <span class="ar-subnav nav-sub-hd d-lg-none">
+                    <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                      <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#sv-right-arrow"></use>
+                    </svg>
+                  </span>
+                  <div class="nav-dropdown full-menu-dropdown engagement-dropdown design-ring-dropdown">
+                    <div class="container">
+                      <div class="row engagement-dropdown-top">
+                        <div class="col-xl-6 col-lg-6 preset-rings-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">BY CATEGORY</h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div
+                            class="nav-dropdown-main d-flex justify-content-between flex-lg-nowrap flex-wrap position-relative mb-lg-4 pb-lg-2">
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+                              <h2 class="cust-h2">Jewelry</h2>
+                              <ul>
+                                <li class="icon">
+                                  <a href="/jewelry/necklace" aria-label="Necklace" title="Necklace"
+                                    class="ga4_top_nav_clk">Necklace</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/jewelry/bracelet" aria-label="Bracelet" title="Bracelet"
+                                    class="ga4_top_nav_clk">Bracelet</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/jewelry/earings" aria-label="Earings" title="Earings" class="ga4_top_nav_clk">Earings
+                                  </a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/jewelry/gleam_collection" aria-label="Gleam Collection" title="Gleam Collection"
+                                    class="ga4_top_nav_clk">Gleam Collection
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                           
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+
+                              <h2 class="cust-h2">
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 design-ring-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">
+                            DESIGN YOUR RING
+                          </h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div class="nav-dropdown-main text-center position-relative mb-3 mb-lg-0">
+                            <div class="your-ring-thumb">
+                              <div class="d-none d-lg-block">
+                                <img
+                                  src="/static/img/header/headerbanner.png"
+                                  loading="lazy" class="d-block w-100" title="Design Your Ring" alt="Design Your Ring"
+                                  style=" background-size: cover;" />
+                              </div>
+                            </div>
+                            <div class="your-ring-content">
+                              <div
+                                class="your-ring-button d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-left">
+                                <div class="ring-button-inner">
+                                  <a href="/appointment" aria-label="BOOK AN APPOINTMENT"
+                                    title="BOOK AN APPOINTMENT" class="btn btn-secondary d-block ga4_top_nav_clk">BOOK
+                                    AN APPOINTMENT</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none mobile-menu-img">
+                      <a href="#" aria-label="Engagement" title="Engagement" class="ga4_top_nav_clk"><img
+                          src="https://media.grownbrilliance.com/a2c5372a-e16a-4ea3-b361-da9fdc89a59f/https:/images.grownbrilliance.com/images/menu/engagement-mob-menu.jpg"
+                          loading="lazy" width="360" height="130" title="Engagement" alt="Engagement" /></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="sub-nav">
+                  <a href="#" aria-label="Wedding" title="Wedding" class="nav-sub-hd ga4_top_nav_clk"
+                    data-uw-rm-brl="PR" data-uw-original-href="#"
+                    style="font-family: MyCustomFont; font-size: 14px">Diamonds</a>
+                  <span class="ar-subnav nav-sub-hd d-lg-none">
+                    <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                      <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#sv-right-arrow"></use>
+                    </svg>
+                  </span>
+                  <div class="nav-dropdown full-menu-dropdown engagement-dropdown design-ring-dropdown">
+                    <div class="container">
+                      <div class="row engagement-dropdown-top">
+                        <div class="col-xl-6 col-lg-6 preset-rings-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">Diamond</h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div
+                            class="nav-dropdown-main d-flex justify-content-between flex-lg-nowrap flex-wrap position-relative mb-lg-4 pb-lg-2">
+                            <div class="nav-dropdown-links nav-dropdown-inner shape-dtl">
+                              <h2 class="cust-h2">Shop by Shape</h2>
+                              <ul class="d-flex flex-wrap align-items-center">
+                                <li class="icon">
+                                  <a href="/diamonds/round" aria-label="Round Diamond" title="Round Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/round.svg"
+                                        loading="lazy" width="30" height="30" title="Round Diamond"
+                                        alt="Round Diamond" /></span>Round</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/emerald" aria-label="Emerald Diamond" title="Emerald Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/emerald.svg" loading="lazy" width="30" height="30"
+                                        title="Emerald Diamond" alt="Emerald Diamond" /></span>Emerald</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/princess" aria-label="Princess Diamond" title="Princess Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/princess.svg" loading="lazy" width="30" height="30"
+                                        title="Princess Diamond" alt="Princess Diamond" /></span>Princess</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/pear" aria-label="Pear Diamond" title="Pear Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/pear.svg"
+                                        loading="lazy" width="30" height="30" title="Pear Diamond"
+                                        alt="Pear Diamond" /></span>Pear</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/cushion" aria-label="Cushion Diamond" title="Cushion Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/cushion.svg" loading="lazy" width="30" height="30"
+                                        title="Cushion Diamond" alt="Cushion Diamond" /></span>Cushion</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/oval" aria-label="Oval Diamond" title="Oval Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/oval.svg"
+                                        loading="lazy" width="30" height="30" title="Oval Diamond"
+                                        alt="Oval Diamond" /></span>Oval</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/asscher" aria-label="Asscher Diamond" title="Asscher Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/asscher.svg" loading="lazy" width="30" height="30"
+                                        title="Asscher Diamond" alt="Asscher Diamond" /></span>Asscher</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/radiant" aria-label="Radiant Diamond" title="Radiant Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/radiant.svg" loading="lazy" width="30" height="30"
+                                        title="Radiant Diamond" alt="Radiant Diamond" /></span>Radiant</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/heart" aria-label="Heart Diamond" title="Heart Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img src="/static/img/shapes/heart.svg"
+                                        loading="lazy" title="Heart Diamond" width="30" height="30"
+                                        alt="Heart Diamond" /></span>Heart</a>
+                                </li>
+                                <li class="icon">
+                                  <a href="/diamonds/marquise" aria-label="Marquise LDiamond" title="Marquise Diamond"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/marquise.svg" loading="lazy" width="30" height="30"
+                                        title="Marquise Diamond" alt="Marquise Diamond" /></span>Marquise</a>
+                                </li>
+                                <li class="icon full-width-shape">
+                                  <a href="/diamonds/elongated-cushion" aria-label="Elongated Cushion" title="Elongated Cushion"
+                                    class="ga4_top_nav_img_clk"><span class="thumb-icon"><img
+                                        src="/static/img/shapes/elongated-cushion.svg" loading="lazy" width="30" height="30"
+                                        title="Elongated Cushion" alt="Elongated Cushion" /></span>Elongated Cushion</a>
+                                </li>
+
+                              </ul>
+                            </div>
+                         
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+
+                              <h2 class="cust-h2">
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 design-ring-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">
+                            DESIGN YOUR RING
+                          </h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div class="nav-dropdown-main text-center position-relative mb-3 mb-lg-0">
+                            <div class="your-ring-thumb">
+                              <div class="d-none d-lg-block">
+                                <img
+                                  src="/static/img/header/headerbanner.png"
+                                  loading="lazy" class="d-block w-100" title="Design Your Ring" alt="Design Your Ring"
+                                  style=" background-size: cover;" />
+                              </div>
+                            </div>
+                            <div class="your-ring-content">
+                              <div
+                                class="your-ring-button d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-left">
+                                <div class="ring-button-inner">
+                                  <a href="/appointment" aria-label="BOOK AN APPOINTMENT"
+                                    title="BOOK AN APPOINTMENT" class="btn btn-secondary d-block ga4_top_nav_clk">BOOK
+                                    AN APPOINTMENT</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none mobile-menu-img">
+                      <a href="#" aria-label="Engagement" title="Engagement" class="ga4_top_nav_clk"><img
+                          src="https://media.grownbrilliance.com/a2c5372a-e16a-4ea3-b361-da9fdc89a59f/https:/images.grownbrilliance.com/images/menu/engagement-mob-menu.jpg"
+                          loading="lazy" width="360" height="130" title="Engagement" alt="Engagement" /></a>
+                    </div>
+                  </div>
+                </li>
+               <li class="sub-nav">
+                  <a href="#" aria-label="Wedding" title="Wedding" class="nav-sub-hd ga4_top_nav_clk"
+                    data-uw-rm-brl="PR" data-uw-original-href="#"
+                    style="font-family: MyCustomFont; font-size: 14px">Gemstones</a>
+                  <span class="ar-subnav nav-sub-hd d-lg-none">
+                    <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                      <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#sv-right-arrow"></use>
+                    </svg>
+                  </span>
+                  <div class="nav-dropdown full-menu-dropdown engagement-dropdown design-ring-dropdown">
+                    <div class="container">
+                      <div class="row engagement-dropdown-top">
+                        <div class="col-xl-6 col-lg-6 preset-rings-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">Gemstone</h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div
+                            class="nav-dropdown-main d-flex justify-content-between flex-lg-nowrap flex-wrap position-relative mb-lg-4 pb-lg-2">
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl"
+                            style="margin-right: 50px;">
+                            <h2 class="cust-h2">Fancy</h2>
+                            <ul>
+                              <li class="icon">
+                                <a href="/gemstones/emerald" aria-label="Wedding Bands" title="Wedding Bands"
+                                  class="ga4_top_nav_clk">Emerald</a>
+                              </li>
+                              <li class="icon">
+                                <a href="/gemstones/ruby" aria-label="Anniversary Bands" title="Anniversary Bands"
+                                  class="ga4_top_nav_clk">Ruby</a>
+                              </li>
+                              <li class="icon">
+                                <a href="/gemstones/sapphire" aria-label="Eternity Bands " title="Eternity Bands "
+                                  class="ga4_top_nav_clk">Sapphire
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          
+                            <div class="nav-dropdown-links nav-dropdown-inner shop-style-dtl">
+
+                              <h2 class="cust-h2">
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 design-ring-main engagement-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">
+                            DESIGN YOUR RING
+                          </h2>
+                          <span class="ar-subnav nav-sub-hd d-lg-none">
+                            <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                              <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="#sv-right-arrow"></use>
+                            </svg>
+                          </span>
+                          <div class="nav-dropdown-main text-center position-relative mb-3 mb-lg-0">
+                            <div class="your-ring-thumb">
+                              <div class="d-none d-lg-block">
+                                <img
+                                  src="/static/img/header/headerbanner.png"
+                                  loading="lazy" class="d-block w-100" title="Design Your Ring" alt="Design Your Ring"
+                                  style="background-size: cover;" />
+                              </div>
+                            </div>
+                            <div class="your-ring-content">
+                              <div
+                                class="your-ring-button d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-left">
+                                <div class="ring-button-inner">
+                                  <a href="/appointment" aria-label="BOOK AN APPOINTMENT"
+                                    title="BOOK AN APPOINTMENT" class="btn btn-secondary d-block ga4_top_nav_clk">BOOK
+                                    AN APPOINTMENT</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none mobile-menu-img">
+                      <a href="#" aria-label="Engagement" title="Engagement" class="ga4_top_nav_clk"><img
+                          src="https://media.grownbrilliance.com/a2c5372a-e16a-4ea3-b361-da9fdc89a59f/https:/images.grownbrilliance.com/images/menu/engagement-mob-menu.jpg"
+                          loading="lazy" width="360" height="130" title="Engagement" alt="Engagement" /></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="sub-nav">
+                  <a href="#" aria-label="Education" title="Education" class="nav-sub-hd ga4_top_nav_clk"
+                    style="font-family: MyCustomFont; font-size: 14px">About Us</a>
+                  <span class="ar-subnav nav-sub-hd d-lg-none">
+                    <svg class="sv-right-arrow" aria-hidden="true" role="img" width="12" height="12">
+                      <use href="#sv-right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#sv-right-arrow"></use>
+                    </svg>
+                  </span>
+                  <div class="nav-dropdown full-menu-dropdown education-dropdown">
+                    <div class="container">
+                      <div class="nav-dropdown-main row justify-content-between flex-lg-nowrap flex-wrap">
+                        <div class="col-lg-4 nav-dropdown-links nav-dropdown-inner">
+                          <h2 class="submenu-main-hd ttu">About Us</h2>
+                          <ul>
+                            <li>
+                              <a href="/whygreamgreen" aria-label="Our story" title="Our story" class="ga4_top_nav_clk">Why Gleam
+                                Green</a>
+                            </li>
+                            <li>
+                              <a href="/ourmission" aria-label="Sustainable & Ethical Materials"
+                                title="Sustainable & Ethical Materials" class="ga4_top_nav_clk">Our Mission</a>
+                            </li>
+                            <li>
+                              <a href="/sustainability" aria-label="Design Your Dream Ring
+                              " title="Design Your Dream Ring
+                              " class="ga4_top_nav_clk">Sustainability
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/education" aria-label="Try At Home
+                              " title="Try At Home
+                              " class="ga4_top_nav_clk">Education
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/labgrow" aria-label="Try At Home
+                              " title="Try At Home
+                              " class="ga4_top_nav_clk">Lab Diamond
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              
+            </ul>
+
+            <style>
+              /* Dropdown content (hidden by default) */
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+              }
+
+              /* Links inside the dropdown */
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+              }
+
+              /* Show the dropdown menu when the user clicks on the dropdown button */
+              .show {
+                display: block;
+              }
+            </style>
+
+            <ul class="nav-menu sticky-right hamburger-menu">
+              <li class="position-relative" style="text-align: right">
+
+                <div class="header contact-us dropdown">
+                  <a class="position-relative con_icon" id="con_icon" rel="nofollow"
+                    style="font-family: MyCustomFont; cursor: pointer;">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="165.000000pt" height="134.000000pt" viewBox="0 0 165.000000 134.000000" preserveAspectRatio="xMidYMid meet" style="width: 20px; height:20px;">
+                      <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                      <path d="M222 1109 l-183 -190 23 -28 c13 -16 183 -212 378 -435 248 -285 360 -406 372 -404 14 2 611 633 634 670 4 5 -45 61 -107 124 l-114 114 -298 0 c-196 0 -296 -3 -292 -10 4 -6 111 -10 289 -10 282 0 283 0 304 -23 12 -13 22 -28 22 -33 0 -20 -421 -459 -440 -459 -12 0 -119 110 -305 312 -157 172 -285 316 -285 320 0 4 46 54 102 110 l103 103 390 0 390 -1 180 -199 c161 -180 205 -220 205 -191 0 5 -84 102 -187 215 l-187 206 -406 -1 -405 0 -183 -190z m281 -413 c161 -176 297 -321 303 -323 7 -2 112 103 235 234 122 131 230 239 238 241 9 1 43 -24 76 -57 l59 -61 -25 -27 c-155 -169 -550 -591 -563 -602 -15 -13 -21 -11 -51 20 -54 56 -677 773 -682 786 -7 19 79 114 100 111 10 -2 149 -147 310 -322z"/>
+                      </g>
+                      </svg> -->
+                    <span class="glopal-hide dropbtn" style="margin: -124px;" onclick="toggleDropdown()">CONTACT
+                      US</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="165.000000pt" height="134.000000pt"
+                      viewBox="0 0 165.000000 134.000000" preserveAspectRatio="xMidYMid meet"
+                      style="width: 20px; height:20px;margin-right:50px">
+                      <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="#000000"
+                        stroke="none">
+                        <path
+                          d="M222 1109 l-183 -190 23 -28 c13 -16 183 -212 378 -435 248 -285 360 -406 372 -404 14 2 611 633 634 670 4 5 -45 61 -107 124 l-114 114 -298 0 c-196 0 -296 -3 -292 -10 4 -6 111 -10 289 -10 282 0 283 0 304 -23 12 -13 22 -28 22 -33 0 -20 -421 -459 -440 -459 -12 0 -119 110 -305 312 -157 172 -285 316 -285 320 0 4 46 54 102 110 l103 103 390 0 390 -1 180 -199 c161 -180 205 -220 205 -191 0 5 -84 102 -187 215 l-187 206 -406 -1 -405 0 -183 -190z m281 -413 c161 -176 297 -321 303 -323 7 -2 112 103 235 234 122 131 230 239 238 241 9 1 43 -24 76 -57 l59 -61 -25 -27 c-155 -169 -550 -591 -563 -602 -15 -13 -21 -11 -51 20 -54 56 -677 773 -682 786 -7 19 79 114 100 111 10 -2 149 -147 310 -322z" />
+                      </g>
+                    </svg>
+                  </a>
+
+
+
+                  <div id="myDropdown" class="dropdown-contacts text-left dd-contact dropdown-content"
+                    style="background-color: #F9E8DF; ">
+                    <ul class="dropdown-contact-list" style="padding-left: 30px;">
+                      <li class="glopal-hide">
+                        <a href="/appointment" class="contact-top-link" aria-label="Book an Appointment"
+                          title="Book an Appointment">Book an
+                          Appointment</a>
+                      </li>
+                      <!-- <li class="glopal-hide">
+                        <a class="contact-top-link" title="Chat">Chat</a>
+                      </li> -->
+                      <li class="glopal-show">
+                        <a class="contact-top-link" href="tel:+1-737-242-0558">Call us</a>
+                      </li>
+                      <li>
+                        <a class="contact-top-link" href="mailto:hello@gleamgreen.com" aria-label="Email Us"
+                          title="Email Us">Email us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <div id="store-list-mobile-popup" class="modal fade store-list-popup-main" role="dialog">
+        <div class="vertical-alignment-helper">
+          <div class="modal-dialog modal-sm vertical-align-center">
+            <div class="modal-content">
+              <div class="modal-body gbstore-popupbody">
+                <div class="home-popup-width">
+                  <div class="home-popup-content">
+                    <a href="javascript:void(0);" type="button" class="close" data-dismiss="modal" role="button"
+                      title="Close" aria-label="Close">
+                      <svg class="sv-close vam" aria-hidden="true" role="img" width="16" height="16">
+                        <use href="#sv-close" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sv-close"></use>
+                      </svg>
+                    </a>
+                    <div id="storelist-mobile"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>

@@ -1,0 +1,58 @@
+
+.calendly-overlay {
+  z-index: 9999999999;
+}
+.calendly-overlay .calendly-popup-close {
+  right: 21%;
+  top: 10%;
+}
+.calendly-inline-widget iframe,
+.calendly-badge-widget iframe,
+.calendly-overlay iframe {
+  height: 670px !important;
+}
+@media (max-width: 1366px) {
+  .calendly-overlay .calendly-popup-close {
+    right: 18%;
+  }
+}
+
+@media (max-width: 991px) {
+  .calendly-overlay .calendly-popup-close {
+    right: 16%;
+    top: 12%;
+  }
+  .calendly-overlay .calendly-popup {
+    top: 55%;
+  }
+}
+
+@media (max-width: 975px) {
+  .calendly-overlay .calendly-popup {
+    top: 15%;
+  }
+  .calendly-overlay .calendly-popup-close {
+    right: 12%;
+    top: 17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .calendly-overlay .calendly-popup {
+    top: 25%;
+  }
+  .calendly-overlay .calendly-popup-close {
+    right: 6%;
+    top: 17%;
+  }
+}
+@media (max-width: 575px) {
+  .calendly-overlay .calendly-popup-close {
+    right: 1%;
+  }
+  .calendly-inline-widget iframe,
+  .calendly-badge-widget iframe,
+  .calendly-overlay iframe {
+    height: 500px !important;
+  }
+}

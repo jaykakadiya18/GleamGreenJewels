@@ -1,0 +1,43 @@
+.love_like_cmt {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 5px; */
+  border: none;
+}
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  backface-visibility: hidden;
+  /* border-radius: 20px; */
+  border: none;
+}
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+.love_like_cmt:hover .image {
+  opacity: 0.3;
+  transform: scale(1.1);
+}
+.love_like_cmt:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: #144429;
+  font-size: 16px;
+  /* padding: 16px 32px; */
+}
+
+@media (max-width: 615px) {
+  .text{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,87 @@
+.help {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.help h1 {
+    font-size: 60px;
+}
+
+.help p {
+    font-size: larger;
+    color: #144429;
+}
+
+p{
+    color: #144429  ;
+}
+
+.helpimage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.image1,
+.image2 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.image1 p,
+.image2 p {
+    font-size: medium;
+    margin-top: 5px;
+}
+
+/* Adjust styles for mobile screens */
+@media screen and (max-width: 767px) {
+    .help h1 {
+        font-size: 40px;
+    }
+    
+    .help p {
+        font-size: medium;
+    }
+
+    .helpimage {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 20px;
+    }
+    .image2{
+        margin-top: 10px;
+    }
+}
+
+.container {
+    max-width: 90%; /* Adjust maximum width for smaller screens */
+}
+
+.faq {
+max-width: 800px;
+margin: 20px auto;
+}
+.faq-item {
+margin-bottom: 20px;
+border-bottom: 1px solid #ddd; /* Add a border bottom */
+padding-bottom: 20px; /* Add some padding below each question */
+}
+.question {
+font-weight: bold;
+cursor: pointer;
+}
+.answer {
+display: none;
+margin-top: 10px;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;   
+}
+.show {
+display: block;
+opacity: 1;
+}
+
+
+
+
