@@ -342,5 +342,19 @@ def termcondition():
 def whygreamgreen():
     return render_template('whygreamgreen.html')
 
+@app.route('/contactform')
+def contactform():
+    return render_template('contact-form.html')
+    
+@app.route('/contactformdata', methods=["GET", "POST"])
+def contact_form_data():
+    name = request.form.get("name")
+    email = request.form.get("email")
+    phone = request.form.get("phone")
+    number = request.form.get("number")
+    coll_inquiry = db["inquiry_data"]
+    coll_inquiry.insert_one({"name":name, "email": email, "phone": phone, "persons": number})
+    return redirect(url_for("contactform"))
+
 if __name__ == '__main__':
     app.run()
