@@ -96,10 +96,11 @@
   <div id="sb-site">
 
     {% include 'header.html' %}
-    <main style="margin: 50px 0;">
+    <main style="margin: 20px 0;">
       <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
+        <br><br><br>
+        <div class="col-2"></div>
+        <div class="col-8 margin: 0 0 20px;">
           <div class="col-md-auto" id="remove_tag" style="margin: 10px;">
             {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {%
             for category, message in
@@ -130,7 +131,8 @@
             <button type="submit" class="btn btn-primary w-100">Submit</button>
           </form>
         </div>
-        <div class="col-4"></div>
+        <div class="col-2"></div>
+        <br><br><br>
       </div>
     </main>
 

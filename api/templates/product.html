@@ -285,9 +285,9 @@
 
 
 
-          <div class="carousel-container" style="background-color: {{ image_bg_color }};">
+          <div class="carousel-container" style="background-color: (image_bg_color);">
             <button class="arrow arrow-left">&#10094;</button>
-            <div class="carousel" style="background-color: {{ image_bg_color }};">
+            <div class="carousel" style="background-color: ( image_bg_color) ;">
               <img src="{{ images_urls[0] }}"
                 alt="Image 1" class="active" >
               {% for i in images_urls[1:] %}
@@ -300,7 +300,7 @@
             <button class="arrow arrow-right">&#10095;</button>
           </div>
 
-          <div class="video" style="background-color: {{video_bg_color}};">
+          <div class="video" style="background-color: (video_bg_color);">
             <video id="videoPlayer" autoplay loop muted playsinline style="width: 450px; height: 450px; display: none; ">
               <source src="{{video_urls}}" type="video/mp4">
             </video>
