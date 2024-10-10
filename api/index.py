@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for ,request, redirect
+from flask import Flask, render_template, url_for ,request, redirect, flash, session
 import psycopg2
 # from dotenv import load_dotenv
 import os,random
@@ -17,6 +17,7 @@ db = client["GleamGreen"]
 # POSTGRES_PORT = os.getenv("POSTGRES_PORT")
 
 app= Flask(__name__)
+app.config["SECRET_KEY"] = "nhjgfbyuajghdbyuajdhgbayujhdgayudsg"
 
 def sending_email_mail(to_m, subject_main, html_text):
     try:
@@ -354,6 +355,7 @@ def contact_form_data():
     number = request.form.get("number")
     coll_inquiry = db["inquiry_data"]
     coll_inquiry.insert_one({"name":name, "email": email, "phone": phone, "persons": number})
+    flash("Your query register successfully...", "success")
     return redirect(url_for("contactform"))
 
 if __name__ == '__main__':
